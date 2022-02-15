@@ -37,7 +37,6 @@ opacity: 1
 
 const Image = styled.img`
   height: 80%;
-  z-index: 2;
 `;
 
 
@@ -45,7 +44,7 @@ const Icon = styled.div`
   height: 40px;
   width: 40px;
   display: flex;
-  background-color: white;
+  background-color: green;
   color: black;
   align-items: center;
   justify-content: center;
@@ -63,11 +62,6 @@ const Icon = styled.div`
 `;
 
 const Circle = styled.div`
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: white;
 `;
 const Product = ({ item }) => {
   return (

@@ -5,6 +5,7 @@ import {
 import React, { useState } from "react";
 import styled from "styled-components";
 import { slideItems } from "../data.js";
+import { mobile } from "../responsive.js";
 
 const Container = styled.div`
   width: 100%;
@@ -13,6 +14,7 @@ const Container = styled.div`
   background-color: coral;
   position: relative;
   overflow: hidden;
+  ${mobile({ display: "none" })}
 `;
 
 const Arrow = styled.div`

@@ -5,12 +5,14 @@ import Navbar from "./Navbar";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 import { Add, Remove } from "@material-ui/icons";
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   display: flex;
   padding: 50px;
+  ${mobile({ padding: "10px", flexDirection: "column" })}
 `;
 
 const Left = styled.div``;
@@ -30,13 +32,13 @@ justify-content: center;
 margin:5px;`;
 
 const Button = styled.button`
-
 margin-left:50px;;
 padding: 15px;
 border: 2px solid teal;
 background-color: white;
 cursor:pointer;
-font-weight: 500;
+overflow: none
+font-weight: 100;
 
 &:hover {
   background-color:green;
@@ -62,6 +64,7 @@ const Title = styled.h1`
 
 const InfoContainer = styled.div`
   flex: 1;
+  ${mobile({ padding: "15px" })}
 `;
 const Description = styled.p`
   margin: 20px 0px;
@@ -106,12 +109,15 @@ const FilterContainer = styled.div`
   justify-content: space-between;
   width: 50%;
   margin: 30px 0px;
+  ${mobile({ width: "100%" })}
 `;
 
 const AddContainer = styled.div`
 display: flex;
 align-items: center;
-width: 50%;`;
+justify-content: center;
+width: 50%;
+${mobile({ width: "100%" })}`;
 
 const AmountContainer = styled.div`
 display: flex;

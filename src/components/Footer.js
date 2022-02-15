@@ -2,25 +2,30 @@ import { blue, pink } from "@material-ui/core/colors";
 import { Facebook, Instagram, MailOutlineOutlined, Phone, Room, Twitter } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
+import {mobile} from "../responsive"
 
 const Container = styled.div`
-display: flex;`;
+display: flex;
+${mobile({ flexDirection: "column" })}`;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   padding: 10px;
+  ${mobile({ alignItems: "center" })}
 `;
 
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ backgroundColor: "#eee" })}
 `;
 
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: "none" })}
  
 `;
 

@@ -1,6 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
@@ -28,6 +29,7 @@ const Wrapper = styled.div`
   background-color: white;
   border-radius: 10px;
   flex-direction: column;
+  ${mobile({ width: "75%" })}
 `;
 
 const Link = styled.a`
@@ -65,6 +67,7 @@ const Button = styled.button`
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
+  border-radius: 10px;
 `;
 
 const Login = () => {

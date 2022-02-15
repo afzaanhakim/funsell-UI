@@ -1,6 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
@@ -27,6 +28,7 @@ const Wrapper = styled.div`
   background-color: white;
   border-radius: 10px;
   flex-direction: column;
+  ${mobile({ width: "75%" })}
 `;
 
 const Title = styled.h1`
@@ -60,6 +62,7 @@ padding: 15px 20px;
 background-color: teal;
 color: white;
 cursor: pointer;
+border-radius: 10px;
 `;
 
 const Register = () => {
